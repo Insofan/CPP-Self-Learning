@@ -26,7 +26,6 @@ int main() {
     std::cout << "* " << greeting << " *" << std::endl;
     std::cout << second << std::endl;
     std::cout << first << std::endl;
-
     return 0;
 }
 
