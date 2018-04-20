@@ -3,6 +3,7 @@
 // MIT License
 //
 
+#include <istream>
 #include <algorithm>
 #include <iomanip>
 #include <ios>
@@ -20,51 +21,48 @@ using std::streamsize;
 using std::vector;
 using std::sort;
 using std::domain_error;
+using std::istream;
 
 /*注意, 这里有两个函数是同一个名字, cpp中可以出现几个函数有同一个名字, 这种概念叫重载*/
 double grade(double midtern, double final, const vector<double> &hw);
+
 double grade(double midtern, double final, double homework);
 
 double median(vector<double> vec);
+
+istream &readHw(istream &in, vector<double> &hw);
 
 int main() {
     cout << "Please enter your first name: ";
     string name;
     cin >> name;
     cout << "Hello, " << name << "!" << endl;
-    //ask for and read the midterm and final grades
+
     cout << "Please enter your midterm and final exam grades: ";
     double midtern, final;
     cin >> midtern >> final;
-    //ask for the homework grades
-    //输入家庭作业, 直到文件结束标志, 按z键或者d键, 注意这里可以用两个"", 可以自动连接成一句话
+
     cout << "Enter all your homework grades, "
             "followed by end-of-file: ";
-    //the number and sum of grades read so far
     int    count = 0;
     double sum   = 0;
 
-    //a variable into which to read
     double         x;
-    //invariant:
-    //we have read count grades so far, and sum is the sum of the first count grades
-    /*cin 类型istream */
     vector<double> homework;
-    while (cin >> x) {
-        homework.push_back(x);
-        ++count;
-        sum += x;
-    }
-    //vector类型定义了一个类型, 名叫vector<double>::size_type, 还定义了一个名叫size 的函数
 
-    vector<double> &hw  = homework;
-    //write the result
-    streamsize     prec = cout.precision();
-    //setprecision 是一个控制符, 它控制流, 使得后来的输出以给定位数的有效数字显示, 我们通常要求系统用三位有效数字来输出成绩,实际上就是控制一共显示多少位,
-    //同一个表达式中同时出现普通的整数和无符号类型的整数,  普通的整数就会换成无符号类型
-    cout << "Your final grade is " << setprecision(4)
-         << grade(midtern, final, hw)
-         << setprecision(prec) << endl;
+    readHw(cin, homework);
+
+    //如果报错用下面的catch
+    try {
+        double     finalGrade = grade(midtern, final, homework);
+        streamsize prec       = cout.precision();
+        cout << "Your final grade is " << setprecision(4)
+             << finalGrade
+             << setprecision(prec) << endl;
+    } catch (domain_error) {
+        cout << endl << "You must enter your grades. "
+                        "Please try again." << endl;
+    }
 
     return 0;
 }
@@ -73,10 +71,23 @@ double grade(double midtern, double final, const vector<double> &hw) {
 //    return 0.2 * midtern + 0.4 * final + 0.4 * median(hw);
     return grade(midtern, final, median(hw));
 }
-double grade(double midterm, double final, double homework)
-{
+
+double grade(double midterm, double final, double homework) {
     return 0.2 * midterm + 0.4 * final + 0.4 * homework;
 }
+
+istream &readHw(istream &in, vector<double> &hw) {
+    if (in) {
+        hw.clear();
+        double x;
+        while (in >> x) {
+            hw.push_back(x);
+            in.clear();
+        }
+    }
+    return in;
+}
+
 
 double median(vector<double> vec) {
     typedef vector<double>::size_type vec_sz;
