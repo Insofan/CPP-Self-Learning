@@ -21,7 +21,10 @@ using std::vector;
 using std::sort;
 using std::domain_error;
 
+/*注意, 这里有两个函数是同一个名字, cpp中可以出现几个函数有同一个名字, 这种概念叫重载*/
+double grade(double midtern, double final, const vector<double> &hw);
 double grade(double midtern, double final, double homework);
+
 double median(vector<double> vec);
 
 int main() {
@@ -38,8 +41,8 @@ int main() {
     cout << "Enter all your homework grades, "
             "followed by end-of-file: ";
     //the number and sum of grades read so far
-    int    count                           = 0;
-    double sum                             = 0;
+    int    count = 0;
+    double sum   = 0;
 
     //a variable into which to read
     double         x;
@@ -54,24 +57,30 @@ int main() {
     }
     //vector类型定义了一个类型, 名叫vector<double>::size_type, 还定义了一个名叫size 的函数
 
+    vector<double> &hw  = homework;
     //write the result
-    streamsize prec = cout.precision();
+    streamsize     prec = cout.precision();
     //setprecision 是一个控制符, 它控制流, 使得后来的输出以给定位数的有效数字显示, 我们通常要求系统用三位有效数字来输出成绩,实际上就是控制一共显示多少位,
     //同一个表达式中同时出现普通的整数和无符号类型的整数,  普通的整数就会换成无符号类型
     cout << "Your final grade is " << setprecision(4)
-         << grade(midtern, final, median(homework))
+         << grade(midtern, final, hw)
          << setprecision(prec) << endl;
 
     return 0;
 }
 
-double grade(double midtern, double final, double median) {
-    return 0.2 * midtern + 0.4 * final + 0.4 * median;
+double grade(double midtern, double final, const vector<double> &hw) {
+//    return 0.2 * midtern + 0.4 * final + 0.4 * median(hw);
+    return grade(midtern, final, median(hw));
+}
+double grade(double midterm, double final, double homework)
+{
+    return 0.2 * midterm + 0.4 * final + 0.4 * homework;
 }
 
 double median(vector<double> vec) {
     typedef vector<double>::size_type vec_sz;
-    vec_sz size = vec.size();
+    vec_sz                            size = vec.size();
     if (size == 0) {
         throw domain_error("median of an empty vector");
     }
