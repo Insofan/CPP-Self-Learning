@@ -4,11 +4,8 @@
 //
 
 #include <istream>
-#include <algorithm>
 #include <iomanip>
-#include <ios>
 #include <iostream>
-#include <string>
 #include <vector>
 
 using std::cin;
@@ -56,8 +53,11 @@ int main() {
     try {
         double     finalGrade = grade(midtern, final, homework);
         streamsize prec       = cout.precision();
+//        cout << "Your final grade is " << setprecision(4)
+//             << finalGrade
+//             << setprecision(prec) << endl;
         cout << "Your final grade is " << setprecision(4)
-             << finalGrade
+             << grade(midtern, final, homework)
              << setprecision(prec) << endl;
     } catch (domain_error) {
         cout << endl << "You must enter your grades. "
