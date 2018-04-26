@@ -3,24 +3,13 @@
 // MIT License
 //
 
-#include <iostream>
-
-int main() {
-    using namespace std;
-    
-    return 0;   
-}
 
 
 #ifndef PROJECT_MEDIAN04_H
 #define PROJECT_MEDIAN04_H
 
+#include <vector>
 
-
-class median04 {
-
-};
-
-
+double medianWtf(std::vector<double>);
 
 #endif //PROJECT_MEDIAN04_H

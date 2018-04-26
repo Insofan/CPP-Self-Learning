@@ -3,16 +3,11 @@
 // MIT License
 //
 
-#include <iostream>
-
-int main() {
-    using namespace std;
-    
-    return 0;   
-}
-
 
 #ifndef PROJECT_FUNCTIONS_H
 #define PROJECT_FUNCTIONS_H
+void print_hello();
+int factorial(int n);
+double median(int n);
 
 #endif //PROJECT_FUNCTIONS_H

@@ -3,12 +3,15 @@
 // MIT License
 //
 
-#include <iostream>
+#include "functions.h"
 
-int main() {
-    using namespace std;
-    
-    return 0;   
+int factorial(int n) {
+    if (n != 1) {
+        return (n* factorial(n - 1));
+    } else {
+        return 1;
+    }
 }
-
-
+double median(int n) {
+    return 20.123;
+}

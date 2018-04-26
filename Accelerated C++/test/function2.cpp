@@ -4,11 +4,8 @@
 //
 
 #include <iostream>
+#include "functions.h"
 
-int main() {
-    using namespace std;
-    
-    return 0;   
+void print_hello() {
+    std::cout << "Hello world!";
 }
-
-
