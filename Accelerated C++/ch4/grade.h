@@ -1,17 +1,15 @@
+// Created by Insofan on 2018/4/26.
+// MIT License
 //
-// Created by Insomnia on 2018/4/26.
-//
 
-#include <stdio.h>
+#ifndef GRADE_H
+#define GRADE_H
 
+#include <vector>
+#include "Student.h"
 
-#ifndef PROJECT_GRADE_H
-#define PROJECT_GRADE_H
-
-
-class grade {
-
-};
-
+double grade(double, double, double);
+double grade(double, double, const std::vector<double>&);
+double grade(const Student&);
 
 #endif //PROJECT_GRADE_H

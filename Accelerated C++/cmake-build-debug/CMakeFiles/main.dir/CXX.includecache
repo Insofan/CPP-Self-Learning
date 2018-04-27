@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/test/function1.cpp
+iostream
+-
+functions.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/test/functions.h
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/test/function2.cpp
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/test/functions.h
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/test/main.cpp
+iostream
+-
+functions.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/test/functions.h
+

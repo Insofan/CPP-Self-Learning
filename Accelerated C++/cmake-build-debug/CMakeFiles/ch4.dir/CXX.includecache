@@ -1,0 +1,70 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp
+Student.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.h
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.h
+iostream
+-
+string
+-
+vector
+-
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp
+stdexcept
+-
+vector
+-
+grade.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.h
+Student.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.h
+median04.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.h
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.h
+vector
+-
+Student.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.h
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main04.cpp
+algorithm
+-
+istream
+-
+iomanip
+-
+iostream
+-
+vector
+-
+median04.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.h
+grade.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.h
+Student.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.h
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.cpp
+median04.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.h
+algorithm
+-
+stdexcept
+-
+vector
+-
+
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.h
+vector
+-
+
