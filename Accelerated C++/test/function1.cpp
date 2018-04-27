@@ -5,10 +5,8 @@
 
 #include <iostream>
 
-int main() {
-    using namespace std;
-    
-    return 0;   
+#include "functions.h"
+using namespace std;
+void printHello(){
+    cout << "HELLO WORLD!" << endl;
 }
-
-

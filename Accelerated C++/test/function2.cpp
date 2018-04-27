@@ -3,12 +3,9 @@
 // MIT License
 //
 
-#include <iostream>
-
-int main() {
-    using namespace std;
-    
-    return 0;   
+double factory(int n) {
+    if (n != 1) {
+        return (n-- * (n - 0.5));
+    }
+    return 1;
 }
-
-

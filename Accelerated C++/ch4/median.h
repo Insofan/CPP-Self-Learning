@@ -2,22 +2,12 @@
 // Created by Insomnia on 2018/4/26.
 //
 
-#include <stdio.h>
+#ifndef MEDIAN_H
+#define MEDIAN_H
 
+#include <vector>
+using std::vector;
 
-int main() {
-    
-    return 0;
-}
-#ifndef PROJECT_MEDIAN_H
-#define PROJECT_MEDIAN_H
-
-
-
-class median {
-
-};
-
-
+double median(vector<double> homework);
 
 #endif //PROJECT_MEDIAN_H

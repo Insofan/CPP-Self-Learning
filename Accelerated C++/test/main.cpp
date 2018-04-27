@@ -4,11 +4,13 @@
 //
 
 #include <iostream>
+#include "functions.h"
 
+using namespace std;
 int main() {
-    using namespace std;
-    
-    return 0;   
+    printHello();
+    cout << "hehe" << " " << factory(5) << endl;
+    return 0;
 }
 
 
