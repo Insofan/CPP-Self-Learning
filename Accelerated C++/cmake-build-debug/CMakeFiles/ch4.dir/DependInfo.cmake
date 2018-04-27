@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp" "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir/ch4/Student.o"
-  "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp" "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir/ch4/grade.o"
-  "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main04.cpp" "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir/ch4/main04.o"
-  "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.cpp" "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir/ch4/median04.o"
+  "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp" "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir/ch4/Student.cpp.o"
+  "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp" "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir/ch4/grade.cpp.o"
+  "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main.cpp" "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir/ch4/main.cpp.o"
+  "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.cpp" "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir/ch4/median.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

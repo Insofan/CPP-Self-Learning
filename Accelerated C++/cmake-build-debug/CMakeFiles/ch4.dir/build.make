@@ -57,116 +57,116 @@ include CMakeFiles/ch4.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ch4.dir/flags.make
 
-CMakeFiles/ch4.dir/ch4/main04.o: CMakeFiles/ch4.dir/flags.make
-CMakeFiles/ch4.dir/ch4/main04.o: ../ch4/main04.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ch4.dir/ch4/main04.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ch4.dir/ch4/main04.o -c "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main04.cpp"
+CMakeFiles/ch4.dir/ch4/main.cpp.o: CMakeFiles/ch4.dir/flags.make
+CMakeFiles/ch4.dir/ch4/main.cpp.o: ../ch4/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ch4.dir/ch4/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ch4.dir/ch4/main.cpp.o -c "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main.cpp"
 
-CMakeFiles/ch4.dir/ch4/main04.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ch4.dir/ch4/main04.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main04.cpp" > CMakeFiles/ch4.dir/ch4/main04.i
+CMakeFiles/ch4.dir/ch4/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ch4.dir/ch4/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main.cpp" > CMakeFiles/ch4.dir/ch4/main.cpp.i
 
-CMakeFiles/ch4.dir/ch4/main04.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ch4.dir/ch4/main04.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main04.cpp" -o CMakeFiles/ch4.dir/ch4/main04.s
+CMakeFiles/ch4.dir/ch4/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ch4.dir/ch4/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main.cpp" -o CMakeFiles/ch4.dir/ch4/main.cpp.s
 
-CMakeFiles/ch4.dir/ch4/main04.o.requires:
+CMakeFiles/ch4.dir/ch4/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/ch4.dir/ch4/main04.o.requires
+.PHONY : CMakeFiles/ch4.dir/ch4/main.cpp.o.requires
 
-CMakeFiles/ch4.dir/ch4/main04.o.provides: CMakeFiles/ch4.dir/ch4/main04.o.requires
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/main04.o.provides.build
-.PHONY : CMakeFiles/ch4.dir/ch4/main04.o.provides
+CMakeFiles/ch4.dir/ch4/main.cpp.o.provides: CMakeFiles/ch4.dir/ch4/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/main.cpp.o.provides.build
+.PHONY : CMakeFiles/ch4.dir/ch4/main.cpp.o.provides
 
-CMakeFiles/ch4.dir/ch4/main04.o.provides.build: CMakeFiles/ch4.dir/ch4/main04.o
-
-
-CMakeFiles/ch4.dir/ch4/median04.o: CMakeFiles/ch4.dir/flags.make
-CMakeFiles/ch4.dir/ch4/median04.o: ../ch4/median04.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ch4.dir/ch4/median04.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ch4.dir/ch4/median04.o -c "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.cpp"
-
-CMakeFiles/ch4.dir/ch4/median04.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ch4.dir/ch4/median04.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.cpp" > CMakeFiles/ch4.dir/ch4/median04.i
-
-CMakeFiles/ch4.dir/ch4/median04.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ch4.dir/ch4/median04.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.cpp" -o CMakeFiles/ch4.dir/ch4/median04.s
-
-CMakeFiles/ch4.dir/ch4/median04.o.requires:
-
-.PHONY : CMakeFiles/ch4.dir/ch4/median04.o.requires
-
-CMakeFiles/ch4.dir/ch4/median04.o.provides: CMakeFiles/ch4.dir/ch4/median04.o.requires
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/median04.o.provides.build
-.PHONY : CMakeFiles/ch4.dir/ch4/median04.o.provides
-
-CMakeFiles/ch4.dir/ch4/median04.o.provides.build: CMakeFiles/ch4.dir/ch4/median04.o
+CMakeFiles/ch4.dir/ch4/main.cpp.o.provides.build: CMakeFiles/ch4.dir/ch4/main.cpp.o
 
 
-CMakeFiles/ch4.dir/ch4/Student.o: CMakeFiles/ch4.dir/flags.make
-CMakeFiles/ch4.dir/ch4/Student.o: ../ch4/Student.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ch4.dir/ch4/Student.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ch4.dir/ch4/Student.o -c "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp"
+CMakeFiles/ch4.dir/ch4/median.cpp.o: CMakeFiles/ch4.dir/flags.make
+CMakeFiles/ch4.dir/ch4/median.cpp.o: ../ch4/median.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ch4.dir/ch4/median.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ch4.dir/ch4/median.cpp.o -c "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.cpp"
 
-CMakeFiles/ch4.dir/ch4/Student.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ch4.dir/ch4/Student.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp" > CMakeFiles/ch4.dir/ch4/Student.i
+CMakeFiles/ch4.dir/ch4/median.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ch4.dir/ch4/median.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.cpp" > CMakeFiles/ch4.dir/ch4/median.cpp.i
 
-CMakeFiles/ch4.dir/ch4/Student.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ch4.dir/ch4/Student.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp" -o CMakeFiles/ch4.dir/ch4/Student.s
+CMakeFiles/ch4.dir/ch4/median.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ch4.dir/ch4/median.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.cpp" -o CMakeFiles/ch4.dir/ch4/median.cpp.s
 
-CMakeFiles/ch4.dir/ch4/Student.o.requires:
+CMakeFiles/ch4.dir/ch4/median.cpp.o.requires:
 
-.PHONY : CMakeFiles/ch4.dir/ch4/Student.o.requires
+.PHONY : CMakeFiles/ch4.dir/ch4/median.cpp.o.requires
 
-CMakeFiles/ch4.dir/ch4/Student.o.provides: CMakeFiles/ch4.dir/ch4/Student.o.requires
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/Student.o.provides.build
-.PHONY : CMakeFiles/ch4.dir/ch4/Student.o.provides
+CMakeFiles/ch4.dir/ch4/median.cpp.o.provides: CMakeFiles/ch4.dir/ch4/median.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/median.cpp.o.provides.build
+.PHONY : CMakeFiles/ch4.dir/ch4/median.cpp.o.provides
 
-CMakeFiles/ch4.dir/ch4/Student.o.provides.build: CMakeFiles/ch4.dir/ch4/Student.o
+CMakeFiles/ch4.dir/ch4/median.cpp.o.provides.build: CMakeFiles/ch4.dir/ch4/median.cpp.o
 
 
-CMakeFiles/ch4.dir/ch4/grade.o: CMakeFiles/ch4.dir/flags.make
-CMakeFiles/ch4.dir/ch4/grade.o: ../ch4/grade.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ch4.dir/ch4/grade.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ch4.dir/ch4/grade.o -c "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp"
+CMakeFiles/ch4.dir/ch4/Student.cpp.o: CMakeFiles/ch4.dir/flags.make
+CMakeFiles/ch4.dir/ch4/Student.cpp.o: ../ch4/Student.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ch4.dir/ch4/Student.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ch4.dir/ch4/Student.cpp.o -c "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp"
 
-CMakeFiles/ch4.dir/ch4/grade.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ch4.dir/ch4/grade.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp" > CMakeFiles/ch4.dir/ch4/grade.i
+CMakeFiles/ch4.dir/ch4/Student.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ch4.dir/ch4/Student.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp" > CMakeFiles/ch4.dir/ch4/Student.cpp.i
 
-CMakeFiles/ch4.dir/ch4/grade.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ch4.dir/ch4/grade.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp" -o CMakeFiles/ch4.dir/ch4/grade.s
+CMakeFiles/ch4.dir/ch4/Student.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ch4.dir/ch4/Student.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.cpp" -o CMakeFiles/ch4.dir/ch4/Student.cpp.s
 
-CMakeFiles/ch4.dir/ch4/grade.o.requires:
+CMakeFiles/ch4.dir/ch4/Student.cpp.o.requires:
 
-.PHONY : CMakeFiles/ch4.dir/ch4/grade.o.requires
+.PHONY : CMakeFiles/ch4.dir/ch4/Student.cpp.o.requires
 
-CMakeFiles/ch4.dir/ch4/grade.o.provides: CMakeFiles/ch4.dir/ch4/grade.o.requires
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/grade.o.provides.build
-.PHONY : CMakeFiles/ch4.dir/ch4/grade.o.provides
+CMakeFiles/ch4.dir/ch4/Student.cpp.o.provides: CMakeFiles/ch4.dir/ch4/Student.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/Student.cpp.o.provides.build
+.PHONY : CMakeFiles/ch4.dir/ch4/Student.cpp.o.provides
 
-CMakeFiles/ch4.dir/ch4/grade.o.provides.build: CMakeFiles/ch4.dir/ch4/grade.o
+CMakeFiles/ch4.dir/ch4/Student.cpp.o.provides.build: CMakeFiles/ch4.dir/ch4/Student.cpp.o
+
+
+CMakeFiles/ch4.dir/ch4/grade.cpp.o: CMakeFiles/ch4.dir/flags.make
+CMakeFiles/ch4.dir/ch4/grade.cpp.o: ../ch4/grade.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ch4.dir/ch4/grade.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ch4.dir/ch4/grade.cpp.o -c "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp"
+
+CMakeFiles/ch4.dir/ch4/grade.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ch4.dir/ch4/grade.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp" > CMakeFiles/ch4.dir/ch4/grade.cpp.i
+
+CMakeFiles/ch4.dir/ch4/grade.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ch4.dir/ch4/grade.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.cpp" -o CMakeFiles/ch4.dir/ch4/grade.cpp.s
+
+CMakeFiles/ch4.dir/ch4/grade.cpp.o.requires:
+
+.PHONY : CMakeFiles/ch4.dir/ch4/grade.cpp.o.requires
+
+CMakeFiles/ch4.dir/ch4/grade.cpp.o.provides: CMakeFiles/ch4.dir/ch4/grade.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/grade.cpp.o.provides.build
+.PHONY : CMakeFiles/ch4.dir/ch4/grade.cpp.o.provides
+
+CMakeFiles/ch4.dir/ch4/grade.cpp.o.provides.build: CMakeFiles/ch4.dir/ch4/grade.cpp.o
 
 
 # Object files for target ch4
 ch4_OBJECTS = \
-"CMakeFiles/ch4.dir/ch4/main04.o" \
-"CMakeFiles/ch4.dir/ch4/median04.o" \
-"CMakeFiles/ch4.dir/ch4/Student.o" \
-"CMakeFiles/ch4.dir/ch4/grade.o"
+"CMakeFiles/ch4.dir/ch4/main.cpp.o" \
+"CMakeFiles/ch4.dir/ch4/median.cpp.o" \
+"CMakeFiles/ch4.dir/ch4/Student.cpp.o" \
+"CMakeFiles/ch4.dir/ch4/grade.cpp.o"
 
 # External object files for target ch4
 ch4_EXTERNAL_OBJECTS =
 
-ch4: CMakeFiles/ch4.dir/ch4/main04.o
-ch4: CMakeFiles/ch4.dir/ch4/median04.o
-ch4: CMakeFiles/ch4.dir/ch4/Student.o
-ch4: CMakeFiles/ch4.dir/ch4/grade.o
+ch4: CMakeFiles/ch4.dir/ch4/main.cpp.o
+ch4: CMakeFiles/ch4.dir/ch4/median.cpp.o
+ch4: CMakeFiles/ch4.dir/ch4/Student.cpp.o
+ch4: CMakeFiles/ch4.dir/ch4/grade.cpp.o
 ch4: CMakeFiles/ch4.dir/build.make
 ch4: CMakeFiles/ch4.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ch4"
@@ -177,10 +177,10 @@ CMakeFiles/ch4.dir/build: ch4
 
 .PHONY : CMakeFiles/ch4.dir/build
 
-CMakeFiles/ch4.dir/requires: CMakeFiles/ch4.dir/ch4/main04.o.requires
-CMakeFiles/ch4.dir/requires: CMakeFiles/ch4.dir/ch4/median04.o.requires
-CMakeFiles/ch4.dir/requires: CMakeFiles/ch4.dir/ch4/Student.o.requires
-CMakeFiles/ch4.dir/requires: CMakeFiles/ch4.dir/ch4/grade.o.requires
+CMakeFiles/ch4.dir/requires: CMakeFiles/ch4.dir/ch4/main.cpp.o.requires
+CMakeFiles/ch4.dir/requires: CMakeFiles/ch4.dir/ch4/median.cpp.o.requires
+CMakeFiles/ch4.dir/requires: CMakeFiles/ch4.dir/ch4/Student.cpp.o.requires
+CMakeFiles/ch4.dir/requires: CMakeFiles/ch4.dir/ch4/grade.cpp.o.requires
 
 .PHONY : CMakeFiles/ch4.dir/requires
 

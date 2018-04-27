@@ -6,7 +6,7 @@
 #include <vector>
 #include "grade.h"
 #include "Student.h"
-#include "median04.h"
+#include "median.h"
 
 using std::domain_error;  using std::vector;
 

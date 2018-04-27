@@ -27,8 +27,8 @@ grade.h
 /Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.h
 Student.h
 /Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.h
-median04.h
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.h
+median.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.h
 
 /Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.h
 vector
@@ -36,7 +36,7 @@ vector
 Student.h
 /Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.h
 
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main04.cpp
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/main.cpp
 algorithm
 -
 istream
@@ -47,16 +47,16 @@ iostream
 -
 vector
 -
-median04.h
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.h
+median.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.h
 grade.h
 /Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/grade.h
 Student.h
 /Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/Student.h
 
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.cpp
-median04.h
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.cpp
+median.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.h
 algorithm
 -
 stdexcept
@@ -64,7 +64,7 @@ stdexcept
 vector
 -
 
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median04.h
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/ch4/median.h
 vector
 -
 

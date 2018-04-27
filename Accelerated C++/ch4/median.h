@@ -1,13 +1,15 @@
 //
-// Created by Insomnia on 2018/4/26.
+// Created by Insofan on 2018/4/24.
+// MIT License
 //
 
-#ifndef MEDIAN_H
-#define MEDIAN_H
+
+
+#ifndef PROJECT_MEDIAN04_H
+#define PROJECT_MEDIAN04_H
 
 #include <vector>
-using std::vector;
 
-double median(vector<double> homework);
+double medianWtf(std::vector<double>);
 
-#endif //PROJECT_MEDIAN_H
+#endif //PROJECT_MEDIAN04_H

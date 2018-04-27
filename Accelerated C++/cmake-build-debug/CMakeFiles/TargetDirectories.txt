@@ -1,5 +1,3 @@
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/main.dir
 /Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/TestCmake.dir
+/Users/inso/Desktop/MyAir/CPP-Self-Learning/Accelerated C++/cmake-build-debug/CMakeFiles/ch4.dir

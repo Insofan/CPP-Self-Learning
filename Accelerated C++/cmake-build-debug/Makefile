@@ -123,145 +123,113 @@ ch4/fast:
 	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/build
 .PHONY : ch4/fast
 
-#=============================================================================
-# Target rules for targets named main
+ch4/Student.o: ch4/Student.cpp.o
 
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named TestCmake
-
-# Build rule for target.
-TestCmake: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestCmake
-.PHONY : TestCmake
-
-# fast build rule for target.
-TestCmake/fast:
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/build
-.PHONY : TestCmake/fast
-
-# target to build an object file
-ch4/Student.o:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/Student.o
 .PHONY : ch4/Student.o
 
-# target to preprocess a source file
-ch4/Student.i:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/Student.i
+# target to build an object file
+ch4/Student.cpp.o:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/Student.cpp.o
+.PHONY : ch4/Student.cpp.o
+
+ch4/Student.i: ch4/Student.cpp.i
+
 .PHONY : ch4/Student.i
 
-# target to generate assembly for a file
-ch4/Student.s:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/Student.s
+# target to preprocess a source file
+ch4/Student.cpp.i:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/Student.cpp.i
+.PHONY : ch4/Student.cpp.i
+
+ch4/Student.s: ch4/Student.cpp.s
+
 .PHONY : ch4/Student.s
 
-# target to build an object file
-ch4/grade.o:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/grade.o
+# target to generate assembly for a file
+ch4/Student.cpp.s:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/Student.cpp.s
+.PHONY : ch4/Student.cpp.s
+
+ch4/grade.o: ch4/grade.cpp.o
+
 .PHONY : ch4/grade.o
 
-# target to preprocess a source file
-ch4/grade.i:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/grade.i
+# target to build an object file
+ch4/grade.cpp.o:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/grade.cpp.o
+.PHONY : ch4/grade.cpp.o
+
+ch4/grade.i: ch4/grade.cpp.i
+
 .PHONY : ch4/grade.i
 
-# target to generate assembly for a file
-ch4/grade.s:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/grade.s
+# target to preprocess a source file
+ch4/grade.cpp.i:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/grade.cpp.i
+.PHONY : ch4/grade.cpp.i
+
+ch4/grade.s: ch4/grade.cpp.s
+
 .PHONY : ch4/grade.s
 
-# target to build an object file
-ch4/main04.o:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/main04.o
-.PHONY : ch4/main04.o
-
-# target to preprocess a source file
-ch4/main04.i:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/main04.i
-.PHONY : ch4/main04.i
-
 # target to generate assembly for a file
-ch4/main04.s:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/main04.s
-.PHONY : ch4/main04.s
+ch4/grade.cpp.s:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/grade.cpp.s
+.PHONY : ch4/grade.cpp.s
+
+ch4/main.o: ch4/main.cpp.o
+
+.PHONY : ch4/main.o
 
 # target to build an object file
-ch4/median04.o:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/median04.o
-.PHONY : ch4/median04.o
+ch4/main.cpp.o:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/main.cpp.o
+.PHONY : ch4/main.cpp.o
+
+ch4/main.i: ch4/main.cpp.i
+
+.PHONY : ch4/main.i
 
 # target to preprocess a source file
-ch4/median04.i:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/median04.i
-.PHONY : ch4/median04.i
+ch4/main.cpp.i:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/main.cpp.i
+.PHONY : ch4/main.cpp.i
+
+ch4/main.s: ch4/main.cpp.s
+
+.PHONY : ch4/main.s
 
 # target to generate assembly for a file
-ch4/median04.s:
-	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/median04.s
-.PHONY : ch4/median04.s
+ch4/main.cpp.s:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/main.cpp.s
+.PHONY : ch4/main.cpp.s
+
+ch4/median.o: ch4/median.cpp.o
+
+.PHONY : ch4/median.o
 
 # target to build an object file
-test/function1.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/function1.o
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/function1.o
-.PHONY : test/function1.o
+ch4/median.cpp.o:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/median.cpp.o
+.PHONY : ch4/median.cpp.o
+
+ch4/median.i: ch4/median.cpp.i
+
+.PHONY : ch4/median.i
 
 # target to preprocess a source file
-test/function1.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/function1.i
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/function1.i
-.PHONY : test/function1.i
+ch4/median.cpp.i:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/median.cpp.i
+.PHONY : ch4/median.cpp.i
+
+ch4/median.s: ch4/median.cpp.s
+
+.PHONY : ch4/median.s
 
 # target to generate assembly for a file
-test/function1.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/function1.s
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/function1.s
-.PHONY : test/function1.s
-
-# target to build an object file
-test/function2.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/function2.o
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/function2.o
-.PHONY : test/function2.o
-
-# target to preprocess a source file
-test/function2.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/function2.i
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/function2.i
-.PHONY : test/function2.i
-
-# target to generate assembly for a file
-test/function2.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/function2.s
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/function2.s
-.PHONY : test/function2.s
-
-# target to build an object file
-test/main.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/main.o
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/main.o
-.PHONY : test/main.o
-
-# target to preprocess a source file
-test/main.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/main.i
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/main.i
-.PHONY : test/main.i
-
-# target to generate assembly for a file
-test/main.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test/main.s
-	$(MAKE) -f CMakeFiles/TestCmake.dir/build.make CMakeFiles/TestCmake.dir/test/main.s
-.PHONY : test/main.s
+ch4/median.cpp.s:
+	$(MAKE) -f CMakeFiles/ch4.dir/build.make CMakeFiles/ch4.dir/ch4/median.cpp.s
+.PHONY : ch4/median.cpp.s
 
 # Help Target
 help:
@@ -269,32 +237,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... ch4"
-	@echo "... main"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... TestCmake"
+	@echo "... ch4"
 	@echo "... ch4/Student.o"
 	@echo "... ch4/Student.i"
 	@echo "... ch4/Student.s"
 	@echo "... ch4/grade.o"
 	@echo "... ch4/grade.i"
 	@echo "... ch4/grade.s"
-	@echo "... ch4/main04.o"
-	@echo "... ch4/main04.i"
-	@echo "... ch4/main04.s"
-	@echo "... ch4/median04.o"
-	@echo "... ch4/median04.i"
-	@echo "... ch4/median04.s"
-	@echo "... test/function1.o"
-	@echo "... test/function1.i"
-	@echo "... test/function1.s"
-	@echo "... test/function2.o"
-	@echo "... test/function2.i"
-	@echo "... test/function2.s"
-	@echo "... test/main.o"
-	@echo "... test/main.i"
-	@echo "... test/main.s"
+	@echo "... ch4/main.o"
+	@echo "... ch4/main.i"
+	@echo "... ch4/main.s"
+	@echo "... ch4/median.o"
+	@echo "... ch4/median.i"
+	@echo "... ch4/median.s"
 .PHONY : help
 
 
