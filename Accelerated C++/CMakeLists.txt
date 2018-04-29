@@ -10,3 +10,9 @@ add_executable(ch5
         ch5/Student.cpp
         ch5/grade.cpp
         )
+add_executable("Fail Extract"
+        ch5/failMain.cpp
+        ch5/Student.cpp
+        ch5/grade.cpp
+        ch5/median.cpp
+        )

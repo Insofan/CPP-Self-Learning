@@ -25,6 +25,7 @@ int main() {
     for (int i = 0; i < fails.size(); ++i)
         cout << fails[i].name << " fail " << grade(fails[i]) << endl;
 
+
     return 0;
 }
 
