@@ -32,6 +32,4 @@ double grade(const Student& s)
     return grade(s.midterm, s.final, s.homework);
 }
 
-bool fgrade(const Student& s) {
-    return grade(s) < 60;
-}
+

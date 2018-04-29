@@ -2,11 +2,11 @@
 // MIT License
 //
 
-#ifndef GRADE_H
-#define GRADE_H
+#ifndef CH5_GRADE_H
+#define CH5_GRADE_H
 
 #include <vector>
-#include "Student.h"
+#include "./Student.h"
 
 double grade(double, double, double);
 double grade(double, double, const std::vector<double>&);

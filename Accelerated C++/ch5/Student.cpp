@@ -8,6 +8,7 @@
 
 using std::istream;
 using std::vector;
+using namespace std;
 bool compare(const Student& x, const Student& y) {
     return x.name < y.name;
 }

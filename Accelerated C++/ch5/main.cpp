@@ -33,7 +33,9 @@ int main() {
         maxLen = max(maxLen, record.name.size());
         students.push_back(record);
     }
+
     sort(students.begin(), students.end(), compare);
+
     for (vector<Student>::size_type i = 0; i != students.size(); ++i) {
         cout << "name " << students[i].name << string(maxLen + 1 - students[i].name.size(), ' ');
         //compute and write the grade
