@@ -39,25 +39,16 @@ istream &readHw(istream &in, vector<double> &hw) {
 }
 
 vector<Student> extractFails(vector<Student> &students) {
-//    vector<Student> pass, fail;
-//    for (vector<Student>::size_type i = 0; i != students.size(); i++ ) {
-//        if (fgrade(students[i])) {
-//            fail.push_back(students[i]);
-//        } else {
-//            pass.push_back(students[i]);
-//        }
-//    }
-//    students = pass;
     vector<Student> fail;
-    vector<Student>::size_type i = 0;
+    vector<Student>::iterator iter = students.begin();
     //这个size需要在while中写, 因为erase所以size是变化的如果提前写好,就会失效
-    while (i != students.size()) {
-        if (fgrade(students[i])) {
-            fail.push_back(students[i]);
+    while (iter != students.end()) {
+        if (fgrade(*iter)) {
+            fail.push_back(*iter);
             //用begin加索引号来删除指定位置
-            students.erase(students.begin() + i);
+            iter = students.erase(iter);
         } else {
-            ++i;
+            ++iter;
         }
     }
     return fail;
