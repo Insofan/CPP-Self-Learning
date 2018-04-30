@@ -16,3 +16,11 @@ add_executable("Fail Extract"
         ch5/grade.cpp
         ch5/median.cpp
         )
+add_executable(spilt
+        ch5/spilt/main.cpp
+        ch5/spilt/spilt.cpp
+        )
+add_executable("Frame word"
+        "ch5/Frame word/main.cpp"
+        "ch5/Frame word/framWord.cpp"
+        )
