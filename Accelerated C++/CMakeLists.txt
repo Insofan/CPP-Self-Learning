@@ -24,3 +24,15 @@ add_executable("Frame word"
         "ch5/Frame word/main.cpp"
         "ch5/Frame word/framWord.cpp"
         )
+add_executable("algo spilt"
+        ch6/spilt/main.cpp
+        ch6/spilt/spilt.cpp
+        )
+add_executable("URL"
+        "ch6/URL/main.cpp"
+
+        )
+add_executable("Static" ch6/static/main.cpp)
+add_executable(map
+        ch7/map/main.cpp
+        )

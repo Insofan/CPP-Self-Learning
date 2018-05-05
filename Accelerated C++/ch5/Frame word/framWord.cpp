@@ -38,3 +38,12 @@ vector<string> frame(const vector<string> &v) {
     rect.push_back(border);
     return rect;
 }
+vector<string> vcat(const vector<string> &top, const vector<string> &bottom) {
+    vector<string> ret = top;
+//    for (vector<string>::const_iterator it = bottom.begin(); it != bottom.end(); it++) {
+//        ret.push_back(*it);
+//    }
+    //这个操作等于上面的for循环
+    ret.insert(ret.end(), bottom.begin(), bottom.end());
+    return ret;
+}
