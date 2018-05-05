@@ -31,6 +31,7 @@ int main() {
     return 0;
 }
 
+
 vector<int> randomVec(int len, int maxNum) {
     vector<int> tempVec;
     srand((unsigned) time(NULL));
