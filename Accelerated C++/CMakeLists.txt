@@ -36,3 +36,6 @@ add_executable("Static" ch6/static/main.cpp)
 add_executable(map
         ch7/map/main.cpp
         )
+add_executable(ch8 ch8/median/main.cpp
+        ch8/median/median.h
+        )
