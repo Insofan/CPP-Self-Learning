@@ -39,3 +39,17 @@ add_executable(map
 add_executable(ch8 ch8/median/main.cpp
         ch8/median/median.h
         )
+add_executable(ch8Find
+        ch8/find/main.cpp
+        )
+add_executable(binarySearch ch8/binarySearch/binarySearch.cpp
+        "RandomVec/randomVec.cpp"
+        )
+add_executable(ch9
+        ch9/main.cpp
+        )
+
+add_executable(ch10
+        ch10/main.cpp
+        )
+add_executable(pointerFunc ch10/pointerFunc.cpp)
