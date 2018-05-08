@@ -50,6 +50,9 @@ add_executable(ch9
         )
 
 add_executable(ch10
-        ch10/main.cpp
+        ch10/test.cpp
         )
 add_executable(pointerFunc ch10/pointerFunc.cpp)
+add_executable(pointerArray ch10/pointerArray.cpp)
+add_executable(main_args ch10/main_args.cpp)
+add_executable(new_delete ch10/new_delete.cpp)
