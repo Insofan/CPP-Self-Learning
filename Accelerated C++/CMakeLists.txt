@@ -56,3 +56,7 @@ add_executable(pointerFunc ch10/pointerFunc.cpp)
 add_executable(pointerArray ch10/pointerArray.cpp)
 add_executable(main_args ch10/main_args.cpp)
 add_executable(new_delete ch10/new_delete.cpp)
+
+add_executable(OOP ch13/Core.cpp
+        ch13/Grad.cpp
+        )
