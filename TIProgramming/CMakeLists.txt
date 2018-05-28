@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 98)
 
 add_executable(TIProgramming main.cpp)
 add_executable(main main.cpp)
-add_executable(test1 test.cpp)
+add_executable(testSeq testSeq.cpp)
+
+add_executable(02addr 02addr.cpp)
