@@ -42,6 +42,11 @@ int main(void) {
     //3.将点分十进制ip地址
     inet_aton("127.0.0.1", &servaddr.sin_addr);
 
+    int on = 1;
+    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &on, sizeof(on)) < 0) {
+        ERR_EXIT("setsokopt");
+    }
+
     //接下来绑定
 
     //将套接字与地址绑定， 地址长度, 第二个参数用了强制转换
