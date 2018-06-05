@@ -45,6 +45,7 @@ int main(void) {
     //接下来绑定
 
     //将套接字与地址绑定， 地址长度, 第二个参数用了强制转换
+    //重新启动时， 因为要绑定地址， 但是此时地址TIME_WAIT无法绑定， 所以启动不了
     int bindFlag = bind(listenfd, (struct sockaddr *) &servaddr, sizeof(servaddr));
     if (bindFlag < 0) {
         ERR_EXIT("bind");
@@ -65,10 +66,13 @@ int main(void) {
     if (conn < 0) {
         ERR_EXIT("accept");
     }
+    //网络字节序转换成点分制，
+    printf("ip = %s port = %d\n", inet_ntoa(peeraddr.sin_addr), ntohs(peeraddr.sin_port));
 
     //变为主动套字
     char recvbuf[1024];
     while (1) {
+        //memset : 将s所指向的某一块内存中的每个字节的内容全部设置为ch指定的ASCII值,
         memset(recvbuf, 0, sizeof(recvbuf));
         int ret = read(conn, recvbuf, sizeof(recvbuf));
         fputs(recvbuf, stdout);

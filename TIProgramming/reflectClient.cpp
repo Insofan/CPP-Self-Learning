@@ -43,26 +43,8 @@ int main(void) {
     //3.将点分十进制ip地址
     inet_aton("127.0.0.1", &servaddr.sin_addr);
 
-    //客户端不需要绑定和监听 ， 只需要直接链接
-    //接下来绑定
-
-    //将套接字与地址绑定， 地址长度, 第二个参数用了强制转换
-//    int bindFlag = bind(listenfd, (struct sockaddr *) &servaddr, sizeof(servaddr));
-//    if (bindFlag < 0) {
-//        ERR_EXIT("bind");
-//    }
 
 
-    //转换成监听状态, 一旦调用这个函数后变为被动套接字， 否则默认为主动套接字， 主动套接字是发起链接 connect， 被动套接字使用接受链接 accpet
-
-//    if (listen(listenfd, SOMAXCONN) < 0) {
-//        ERR_EXIT("listen");
-//    }
-
-//    struct sockaddr_in peeraddr;
-//    socklen_t peerlen = sizeof(peeraddr);
-//
-//    int conn = accept(listenfd, (struct sockaddr *) &peeraddr, &peerlen);
 
     if (connect(sock, (struct sockaddr*)&servaddr, sizeof(servaddr)) < 0) {
         ERR_EXIT("connect");
