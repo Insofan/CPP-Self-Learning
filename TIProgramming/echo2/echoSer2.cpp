@@ -20,6 +20,25 @@
             exit(EXIT_FAILURE);\
         }while(0)
 
+void do_service(int conn) {
+    //变为主动套字
+    char recvbuf[1024];
+    while (1) {
+        //memset : 将s所指向的某一块内存中的每个字节的内容全部设置为ch指定的ASCII值,
+        memset(recvbuf, 0, sizeof(recvbuf));
+        int ret = read(conn, recvbuf, sizeof(recvbuf));
+        if (ret == 0) {
+
+            printf("client close\n");
+            break;
+        } else if (ret == -1) {
+            ERR_EXIT("read");
+        }
+        fputs(recvbuf, stdout);
+        write(conn, recvbuf, ret);
+    }
+}
+
 int main(void) {
     int listenfd;
     //第一个族， 第二个 socket 类型, 第三个参数可以填0
@@ -66,26 +85,29 @@ int main(void) {
     struct sockaddr_in peeraddr;
     socklen_t peerlen = sizeof(peeraddr);
 
-    int conn = accept(listenfd, (struct sockaddr *) &peeraddr, &peerlen);
-
-    if (conn < 0) {
-        ERR_EXIT("accept");
-    }
-    //网络字节序转换成点分制，
-    printf("ip = %s port = %d\n", inet_ntoa(peeraddr.sin_addr), ntohs(peeraddr.sin_port));
-
-    //变为主动套字
-    char recvbuf[1024];
+    int conn;
+    pid_t pid;
     while (1) {
-        //memset : 将s所指向的某一块内存中的每个字节的内容全部设置为ch指定的ASCII值,
-        memset(recvbuf, 0, sizeof(recvbuf));
-        int ret = read(conn, recvbuf, sizeof(recvbuf));
-        fputs(recvbuf, stdout);
-        write(conn, recvbuf, ret);
+
+        if (conn = accept(listenfd, (struct sockaddr *) &peeraddr, &peerlen) < 0) {
+            ERR_EXIT("accept");
+        }
+        //网络字节序转换成点分制，
+        printf("ip = %s port = %d\n", inet_ntoa(peeraddr.sin_addr), ntohs(peeraddr.sin_port));
+
+        pid = fork();
+        if (pid == -1) {
+            ERR_EXIT("fork");
+        }
+
+        if (pid == 0) {
+            close(listenfd);
+            do_service(conn);
+        } else {
+            close(conn);
+        }
     }
 
-    close(conn);
-    close(listenfd);
 
     return 0;
 }

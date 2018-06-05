@@ -44,8 +44,6 @@ int main(void) {
     inet_aton("127.0.0.1", &servaddr.sin_addr);
 
 
-
-
     if (connect(sock, (struct sockaddr*)&servaddr, sizeof(servaddr)) < 0) {
         ERR_EXIT("connect");
     };
