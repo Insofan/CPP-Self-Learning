@@ -18,3 +18,5 @@ add_executable(p2pCli p2p/p2pCli.cpp)
 
 add_executable(testCli p2p/testCli.cpp)
 add_executable(testServ p2p/testServ.cpp)
+add_executable(packageSer package/range/echoSer2.cpp)
+add_executable(packageCli package/range/echoCli2.cpp)
