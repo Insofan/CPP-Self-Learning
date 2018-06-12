@@ -20,3 +20,6 @@ add_executable(testCli p2p/testCli.cpp)
 add_executable(testServ p2p/testServ.cpp)
 add_executable(packageSer package/range/echoSer2.cpp)
 add_executable(packageCli package/range/echoCli2.cpp)
+
+add_executable(recvEchoServ recv/echoServ.cpp)
+add_executable(recvEchoCli recv/echoCli.cpp)

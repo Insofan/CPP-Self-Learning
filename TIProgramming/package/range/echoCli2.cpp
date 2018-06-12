@@ -21,6 +21,11 @@
             exit(EXIT_FAILURE);\
         }while(0)
 
+struct packet {
+    int len;
+    char buf[1024];
+};
+
 ssize_t readn(int fd, void *buf, size_t count) {
     size_t nleft = count;
     ssize_t nread;
@@ -99,19 +104,40 @@ int main(void) {
         ERR_EXIT("connect");
     };
 
-    char sendbuf[1024] = {0};
+//    char sendbuf[1024] = {0};
+//
+//    char recvbuf[1024] = {0};
 
-    char recvbuf[1024] = {0};
-
+    struct packet sendbuf;
+    struct packet recvbuf;
+    memset(&sendbuf, 0, sizeof(sendbuf));
+    memset(&recvbuf, 0, sizeof(recvbuf));
     //变为主动套字
-    while (fgets(sendbuf, sizeof(sendbuf), stdin) != NULL) {
-//        printf("%d\n", sizeof(sendbuf));
-        writen(sock, sendbuf, sizeof(sendbuf));
-        readn(sock, recvbuf, sizeof(recvbuf));
-        fputs(recvbuf, stdout);
-        //memset是计算机中C/C++语言函数。将s所指向的某一块内存中的后n个 字节的内容全部设置为ch指定的ASCII值， 第一个值为指定的内存地址，块的大小由第三个参数指定，这个函数通常为新申请的内存做初始化工作， 其返回值为s。
-        memset(sendbuf, 0, sizeof(sendbuf));
-        memset(recvbuf, 0, sizeof(recvbuf));
+    int n;
+    while (fgets(sendbuf.buf, sizeof(sendbuf.buf), stdin) != NULL) {
+
+        n = strlen(sendbuf.buf);
+        sendbuf.len = htonl(n);
+        //需要发布头部的四个字节
+        writen(sock, &sendbuf.buf, 4+n);
+        int ret = readn(sock, &recvbuf.len, 4);
+        if (ret == -1) {
+            ERR_EXIT("read");
+        } else if (ret < 4) {
+            printf("client close\n");
+            break;
+        }
+
+        int n = ntohl(recvbuf.len);
+        ret = readn(sock, recvbuf.buf, n);
+        if (ret == -1) {
+            ERR_EXIT("read");
+        } else if (ret < n) {
+            printf("client close\n");
+            break;
+        }
+        fputs(recvbuf.buf, stdout);
+        writen(sock, &recvbuf.buf, 4+n);
     }
 
     close(sock);
