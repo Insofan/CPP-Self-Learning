@@ -33,7 +33,7 @@ int main(void) {
     //地址 家族
     servaddr.sin_family = AF_INET;
     //转换成网络字节序 ， s表示两个字节
-    servaddr.sin_port = htons(8888);
+    servaddr.sin_port = htons(6666);
     //1. 绑定本机任意地址, 转换字节序， 其中INADDR_ANY是0， 无论怎么转换都是0， 所以可以去掉htonl
     /*servaddr.sin_addr.s_addr = htonl(INADDR_ANY); */
     servaddr.sin_addr.s_addr = htonl(INADDR_ANY);

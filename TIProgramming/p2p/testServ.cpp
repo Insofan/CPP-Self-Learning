@@ -67,6 +67,7 @@ int main(void)
 
     if (pid == 0)
     {
+        //用信号来互相通知进程退出
         signal(SIGUSR1, handler);
         char sendbuf[1024] = {0};
         while (fgets(sendbuf, sizeof(sendbuf), stdin) != NULL)

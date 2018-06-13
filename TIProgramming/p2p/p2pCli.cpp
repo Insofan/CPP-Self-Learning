@@ -9,6 +9,7 @@
 #include <cstdio>
 #include <cstring>
 #include <zconf.h>
+#include <signal.h>
 
 #define ERR_EXIT(m) \
         do \
@@ -17,7 +18,11 @@
             exit(EXIT_FAILURE);\
         }while(0)
 
-
+void handler(int sig)
+{
+    printf("recv a sig=%d\n", sig);
+    exit(EXIT_SUCCESS);
+}
 int main() {
     int sock;
 
@@ -62,15 +67,20 @@ int main() {
             }
             fputs(recvbuf, stdout);
         }
+        printf("child close\n");
+        kill(pid, SIGUSR2);
+        exit(EXIT_SUCCESS);
     } else {
+        signal(SIGUSR2, handler);
         char sendbuf[1024] = {0};
         while (fgets(sendbuf, sizeof(sendbuf), stdin) != NULL) {
             write(sock, sendbuf, strlen(sendbuf));
             //memset是计算机中C/C++语言函数。将s所指向的某一块内存中的后n个 字节的内容全部设置为ch指定的ASCII值， 第一个值为指定的内存地址，块的大小由第三个参数指定，这个函数通常为新申请的内存做初始化工作， 其返回值为s。
             memset(sendbuf, 0, sizeof(sendbuf));
         }
+        printf("parent close\n");
         close(sock);
-
+        exit(EXIT_SUCCESS);
     }
 
 
