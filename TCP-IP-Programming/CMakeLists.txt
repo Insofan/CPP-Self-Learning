@@ -1,2 +1,3 @@
 
-add_executable(测试子序 测试子序.cpp)
+
+add_executable(helloServ ch1/helloServ.cpp)
