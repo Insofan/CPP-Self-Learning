@@ -22,26 +22,41 @@ int main() {
         errorHandling("Sock error");
     }
 
-    struct sockaddr_in servAddr;
+    struct sockaddr_in servaddr;
 
-    memset(&servAddr, 0, sizeof(servAddr));
-    servAddr.sin_family = AF_INET;
-    servAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
-    servAddr.sin_port = htons(atoi("8888"));
+//    memset(&sock, 0, sizeof(sock));
+//    servAddr.sin_family = AF_INET;
+//    servAddr.sin_port = htons(7777);
+//    servAddr.sin_addr.s_addr = htonl(INADDR_ANY);
 
-    if (connect(sock, (struct sockaddr*) &servAddr, sizeof(servAddr)) < 0) {
+    memset(&servaddr, 0, sizeof(servaddr));
+    servaddr.sin_family = AF_INET;
+    servaddr.sin_port = htons(5188);
+    servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    printf("current port %hu\n", servaddr.sin_port);
+    int connFlag = connect(sock, (struct sockaddr *) &servaddr, sizeof(servaddr));
+    if (connFlag == -1) {
         errorHandling("connect error");
     } else {
         puts("connect");
     }
 
     char message[BUF_SIZE];
+    int strLength;
     while (1) {
-        fputc("input message(Q to quit): ", stdout);
+        fputs("input message(Q to quit): ", stdout);
         fgets(message, BUF_SIZE, stdin);
+        if (!strcmp(message, "q\n") || !strcmp(message, "Q\n")) {
+            break;
+        }
 
+        write(sock, message, strlen(message));
+        strLength = read(sock, message, BUF_SIZE - 1);
+        message[strLength] = 0;
+        printf("Message from server: %s", message);
     }
 
+    close(sock);
     return 0;
 }
 

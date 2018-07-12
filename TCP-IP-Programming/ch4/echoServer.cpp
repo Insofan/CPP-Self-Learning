@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     char message[BUF_SIZE];
     int strLen, i;
 
-    struct sockaddr_in servAdr, clntAdr;
+    struct sockaddr_in servaddr, clntAdr;
     socklen_t clntAdrSz;
 
     servSock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
@@ -27,12 +27,16 @@ int main(int argc, char *argv[]) {
         errorHandling("Socket error");
     }
 
-    memset(&servAdr, 0, sizeof(servAdr));
-    servAdr.sin_family = PF_INET;
-    servAdr.sin_addr.s_addr = htonl(atoi("127.0.0.1"));
-    servAdr.sin_port = htons(atoi("8888"));
+//    memset(&servAdr, 0, sizeof(servAdr));
+//    servAdr.sin_family = PF_INET;
+//    servAdr.sin_port = htons(atoi("7777"));
+//    servAdr.sin_addr.s_addr = htonl(atoi("127.0.0.1"));
+    memset(&servaddr, 0, sizeof(servaddr));
+    servaddr.sin_family = AF_INET;
+    servaddr.sin_port = htons(5188);
+    servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 
-    if (!bind(servSock, (sockaddr *) &servAdr, sizeof(servAdr))) {
+    if (bind(servSock, (struct sockaddr *) &servaddr, sizeof(servaddr)) < 0) {
         errorHandling("bind error");
     }
 
@@ -43,6 +47,7 @@ int main(int argc, char *argv[]) {
     clntAdrSz = sizeof(clntAdr);
 
     for (int j = 0; j < 5; ++j) {
+        printf("current port %hu\n", servaddr.sin_port);
         clntSock = accept(servSock, (struct sockaddr *) &clntAdr, &clntAdrSz);
         if (clntSock == -1) {
             errorHandling("accept error");
