@@ -24,15 +24,11 @@ int main() {
 
     struct sockaddr_in servaddr;
 
-//    memset(&sock, 0, sizeof(sock));
-//    servAddr.sin_family = AF_INET;
-//    servAddr.sin_port = htons(7777);
-//    servAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-
     memset(&servaddr, 0, sizeof(servaddr));
     servaddr.sin_family = AF_INET;
-    servaddr.sin_port = htons(5188);
     servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    servaddr.sin_port = htons(9999);
+
     printf("current port %hu\n", servaddr.sin_port);
     int connFlag = connect(sock, (struct sockaddr *) &servaddr, sizeof(servaddr));
     if (connFlag == -1) {

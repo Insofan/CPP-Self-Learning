@@ -27,14 +27,12 @@ int main(int argc, char *argv[]) {
         errorHandling("Socket error");
     }
 
-//    memset(&servAdr, 0, sizeof(servAdr));
-//    servAdr.sin_family = PF_INET;
-//    servAdr.sin_port = htons(atoi("7777"));
-//    servAdr.sin_addr.s_addr = htonl(atoi("127.0.0.1"));
     memset(&servaddr, 0, sizeof(servaddr));
-    servaddr.sin_family = AF_INET;
-    servaddr.sin_port = htons(5188);
-    servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    servaddr.sin_family = PF_INET;
+    servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    servaddr.sin_port = htons(9999);
+
+
 
     if (bind(servSock, (struct sockaddr *) &servaddr, sizeof(servaddr)) < 0) {
         errorHandling("bind error");
